@@ -16,7 +16,7 @@ import os
 r = redis.Redis(host='localhost', port=6379, db=0)
 RAG = RAGMultiModalModel.from_index("/Users/spartan/Desktop/CMPE 273/hackathon_final")
 images = convert_from_path("/Users/spartan/Desktop/CMPE 273/SOFI-Merged.pdf")
-
+os.environ['OPENAI_API_KEY']="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"
 
 def generate_response(query):
     results = RAG.search(query, k=3)    
