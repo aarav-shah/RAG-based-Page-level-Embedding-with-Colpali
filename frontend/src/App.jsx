@@ -164,7 +164,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <h1 className="app-title">Hackathon - The State of Food Security and Nutrition 2024</h1>
+      <h1 className="app-title">SAMHSA CHATBOT</h1>
       {chats.length >0 && <div className="chat-window" ref={chatWindowRef}>
         {chats.map((chat, index) => (
           <div
